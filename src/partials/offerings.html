@@ -1,13 +1,46 @@
-<!-- <section id="offerings" class="offerings">
+<section id="offerings" class="offerings">
   <div class="container offerings-container">
     <div class="offerings-img-wrap">
+      <picture>
+        <source
+    media="(min-width: 1280px)"
+    srcset="
+    ./images/gallery/img-1_lg.jpg 1x,
+    ./images/gallery/img-1_lg@2x.jpg 2x"
+    width="396"
+    height="502"
+  />
+  <source
+  media="(min-width: 768px)"
+  srcset="
+  ./img/offerings/apple-tablet.png 1x, 
+  ./img/offerings/apple-tablet@2x.png 2x"
+  widht="257"
+  height="325"
+/>
+<source
+    media="(max-width: 767px)"
+    srcset="
+    ./img/offerings/apple-mobile.png 1x, 
+    ./img/offerings/apple-mobile@2x.png 2x"
+    widht="202"
+    height="256"
+  />
+  <!-- <source
+    media="(max-width: 479px)"
+    srcset="
+    ./img/offerings/apple-desktop.png 1x, 
+    ./images/gallery/img-1_sm@2x.jpg 2x"
+    type="image/jpg"
+  /> -->
       <img
         class="offerings-img"
-        src="./img/offerings/apple-desktop.png"
+        src="./img/offerings/apple-mobile.png"
         alt="appple"
-        width="396"
-        height="502"
+        widht="202"
+        height="256"
       />
+    </picture>
       <img
         src="./img/offerings/ellipse-shadow-bakdrop.png"
         alt="shadow"
@@ -26,8 +59,8 @@
       <ul id="service" class="offerings-list">
         <li class="offerings-item">
           <div class="offerings-item-icon">
-            <svg class="offerings-icon" width="28" height="28">
-              <use href="./images/icons.svg#rocket"></use>
+            <svg class="offerings-icon">
+              <use href="./img/icons.svg#rocket"></use>
             </svg>
           </div>
           <h3 class="offerings-subtitle">Fasest Delivery</h3>
@@ -38,8 +71,8 @@
         </li>
         <li class="offerings-item">
           <div class="offerings-item-icon">
-            <svg class="offerings-icon" width="28" height="28">
-              <use href="./images/icons.svg#touch"></use>
+            <svg class="offerings-icon">
+              <use href="./img/icons.svg#touch"></use>
             </svg>
           </div>
           <h3 class="offerings-subtitle">Easy To Order</h3>
@@ -50,7 +83,7 @@
           </p>
         </li>
       </ul>
-      <button class="main-btn offerings-btn" type="button">Order Now</button>
+      <button class="offerings-btn" type="button">Order Now</button>
     </div>
   </div>
-</section> -->
+</section>
