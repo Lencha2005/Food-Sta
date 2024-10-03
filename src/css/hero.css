@@ -1,0 +1,40 @@
+.hero {
+    padding-top: 14px;
+    padding-bottom: 69px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-container-wrap {
+    width: 511px;
+}
+
+.hero-title {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 28px;
+}
+
+.hero-text {
+        line-height: 1.5;
+        margin-bottom: 40px;
+}
+.hero-img {
+    border-radius: 100%;
+    border: 26px solid #ffe550;
+        
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+  
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+    
+}

@@ -1,0 +1,42 @@
+.favorite {
+    padding-top: 120px;
+    padding-bottom: 101px;
+}
+
+.favorite-container {}
+
+.favorite-titel {
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.favorite-text {
+        text-align: center;
+        margin-bottom: 40px;
+}
+
+.favorite-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+ 
+}
+
+.favorite-item {
+    width: calc((100% - 64px) / 3);
+    border: 16px solid #ffe550;
+        border-radius: 197px;
+        height: 397px;
+        padding: 25px 24px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+  
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+    
+}
