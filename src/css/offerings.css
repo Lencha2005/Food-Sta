@@ -6,25 +6,24 @@
     );
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding-top: 41px;
+    background-position: 50% 0;
+    padding-top: 90px;
     padding-bottom: 72px;
     width: 100%;
-    /* height: 1122px; */
 }
-  
-.offerings-container {
-    /* padding-top: 41px; */
-    /* padding-right: 51px; */
+
+.apple-img {
+    display: none;
+}
+
+.apple-small-img {
+    display: none;
 }
 
 .offerings-img-wrap {
     position: relative;
-    /* width: 255px;
-    height: 255px; */
-    width: 248px;
-    height: 248px;
-    /* padding-top: 41px; */
+    width: 255px;
+    height: 255px;
     background-color: #fefefe;
     border-radius: 50%;
     border: 8px solid var(--yellow);
@@ -32,40 +31,35 @@
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-  
 }
   
 .offerings-img {
     display: block;
     position: absolute;
-    bottom: 30px;
+    bottom: 22px;
     left: 50%;
     transform: translateX(-50%);
     z-index:1;
-    
 }
 
 .offerings-img-shadow {
     position: absolute;
     width: 128px;
     height: 44px;
-    bottom: 12px;
-    left: 66px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
-  
-  /* .offerings-container-wrap {
-      width: 573px;
-  } */
   
 .offerings-title {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.2;
     margin-bottom: 28px;
 }
   
 .offerings-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.43;
     margin-bottom: 28px;
 }
@@ -100,12 +94,12 @@
     margin-bottom: 16px;
 }
   
-  .offerings-subtext {
-      font-size: 14px;
-      line-height: 1.5;
-  }
+.offerings-subtext {
+    font-size: 14px;
+    line-height: 1.43;
+}
   
-  .offerings-btn {
+.offerings-btn {
     border-radius: 30px;
     border: none;
     min-width: 105px;
@@ -113,93 +107,191 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
-      border: 2px solid var(--dark-green);
-      background: #ffffff;
-      transition: background-color var(--timing-function), border var(--timing-function);
-  }
+    border: 2px solid var(--dark-green);
+    background: #ffffff;
+    transition: background-color var(--timing-function), border var(--timing-function);
+}
 
-  .offerings-btn:focus,
-  .offerings-btn:hover {
-      background-color: var(--green);
-      border: transparent;
-  }
+.offerings-btn:focus,
+.offerings-btn:hover {
+    background-color: var(--green);
+    border: transparent;
+}
 
    /* MAX-WIDTH 479px */
 @media screen and (max-width: 479px) {
-  .offerings {
+.offerings {
     background-image: image-set(
         url(/img/offerings/top-mobile.png) 1x,
         url(/img/offerings/top-mobile@2x.png) 2x
     );
-      /* padding-top: 113px;
-      padding-bottom: 124px; */
-  }
+    padding-top: 82px;
+}
+
+.offerings-title {
+    font-size: 28px;
+}
+  
+.offerings-text {
+    font-size: 14px;
+}
 }
 
   /* TABLET */
 @media screen and (min-width: 768px) {
-    
+.offerings {
+    background-image: image-set(
+        url(/img/offerings/top-tablet.png) 1x,
+        url(/img/offerings/top-tablet@2x.png) 2x
+    );
+    background-size: 768px 1140px;
+    padding-top: 202px;
+    padding-bottom: 89px;
+    position: absolute;
+    top: 358px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.offerings-wrapper-image{
+    position: relative;
+}
+
+.offerings-img-wrap {
+    width: 325px;
+    height: 325px;
+    border: 15px solid var(--yellow);
+    margin-left: 0;
+    margin-right: 29px;
+}
+
+.offerings-img-shadow {
+    bottom: -8px;
+    left: 50px;
+    transform: translateX(0);
+    width:199px;
+    height: 92px;
+}
+
+.apple-img {
+    display: block;
+    width: 166px;
+    height: 210px;
+    position: absolute;
+    top: 79px;
+    right: 173px;
+}
+
+.apple-small-img {
+    display: block;
+    width: 108px;
+    height: 136px;
+    position: absolute;
+    top: 153px;
+    right: 21px;
+}
+
+.offerings-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    width: 526px;
+}
+
+.offerings-text {
+    line-height: 1.5;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.offerings-list {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.offerings-item {
+    width: 282px;
+}
+
+.offerings-subtitle {
+    font-size: 18px;
+}
+  
+.offerings-subtext {
+    font-size: 14px;
+    line-height: 1.43;
+}
 }
   
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
-    .offerings-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 16px;
-        padding-right: 51px;
-    } 
-    .offerings-img-wrap {
-        position: relative;
-        width: 550px;
-        height: 550px;
-        background-color: #fefefe;
-        border-radius: 50%;
-        border: 24px solid var(--yellow);
-        outline: 5px solid #fefefe;
-    
-    }
-    .offerings-title {
-        font-size: 42px;
-        line-height: 1.2;
-        margin-bottom: 20px;
-    }
-    .offerings-text {
-        line-height: 1.5;
-        width: 500px;
-        margin-bottom: 40px;
-    }
-    .offerings-container-wrap {
-        width: 573px;
-    }
-    .offerings-list {
-        display: flex;
-        gap: 67px;
-    }
-    .offerings-item {
-        width: calc((100% - 67) / 2);
-    }
-    .offerings-item-icon {
-        width: 48px;
-        height: 48px;
-        background-color: #fefefe;
-        fill: var(--dark-green);
-        border-radius: 100%;
-        padding: 10px;
-        margin-bottom: 8px;
-    }
-    .offerings-img {
-        display: block;
-        position: absolute;
-        bottom: 78px;
-        left: 60px;
-        z-index:1;
-        
-    }
-    .offerings-img-shadow {
-        position: absolute;
-        bottom: 51px;
-        left: 131px;
-    }
+.offerings {
+    background-image: image-set(
+        url(/img/offerings/top-desktop.png) 1x,
+        url(/img/offerings/top-desktop@2x.png) 2x
+    );
+    background-size: 1280px 824px;
+    padding-top: 230px;
+    padding-bottom: 43px;
+    position: absolute;
+    top: 358px;
+}
+
+.apple-img {
+    display: none;
+}
+
+.apple-small-img {
+    display: none;
+}
+
+.offerings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 51px;
+}
+
+.offerings-wrapper-image{
+    padding-left: 5px;
+}
+
+.offerings-img-wrap {
+    width: 550px;
+    height: 550px;
+    border: 24px solid var(--yellow);
+    outline: 5px solid #fefefe;
+    margin: 0;
+}
+
+.offerings-img {
+    bottom: 80px;
+    left: 60px;
+    transform: translateX(0);
+}
+
+.offerings-img-shadow {
+    bottom: 42px;
+    left: 131px;
+    width: 252px;
+    height: 87px;
+}
+
+.offerings-text {
+    margin-bottom: 40px;
+}
+
+.offerings-container-wrap {
+    width: 573px;
+}
+
+.offerings-list {
+    gap: 67px;
+    margin-bottom: 32px;
+}
+
+.offerings-item {
+    width: calc((100% - 67) / 2);
+}
 }
