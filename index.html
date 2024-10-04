@@ -17,7 +17,9 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
 />
     <script type="module" crossorigin src="/Food-Sta/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Food-Sta/assets/index-CzPg4SOp.css">
+    <link rel="modulepreload" crossorigin href="/Food-Sta/assets/vendor-CawdlR98.js">
+    <link rel="stylesheet" crossorigin href="/Food-Sta/assets/vendor-HdWFjXwp.css">
+    <link rel="stylesheet" crossorigin href="/Food-Sta/assets/index-C1Um9_X0.css">
   </head>
   <body>
     <header class="header">
@@ -46,7 +48,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     <button class="header-btn" type="button" aria-label="order now">Order Now</button>
     <button class="btn-open-mobile" type="button" aria-label="open mobile menu">
       <svg class="icon-burger" width="28" height="28">
-        <use href="/Food-Sta/assets/icons-CtlMJJk1.svg#burger"></use>
+        <use href="/Food-Sta/assets/icons-Do1mIRoG.svg#burger"></use>
       </svg>
     </button>
   
@@ -77,7 +79,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     <main>
       <section class="hero">
     <div class="container hero-container">
-      <div class="hero-container-wrap">
+      <!-- <div class="hero-container-wrap"> -->
         <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
         <p class="hero-text">
           With just a few clicks, you can have your favorite meals delivered
@@ -86,17 +88,116 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
           own home.
         </p>
         <button class="hero-btn" type="button" aria-label="order now">Order Now</button>
+      <!-- </div> -->
+
+<!-- SWIPER -->
+      <div class="hero-swiper">
+        <div class="swiper sw">
+          <ul class="hero-img-list swiper-wrapper">
+                <li class="hero-img-item swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Food-Sta/assets/foto-1-desktop-ZPfr_NIU.png 1x, /Food-Sta/assets/foto-1-desktop@2x-CL4nXKSl.png 2x"
+            alt="meal"
+            width="528"
+            height="528"
+            loading="lazy"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Food-Sta/assets/foto-1-tablet-GOXmJID8.png 1x, /Food-Sta/assets/foto-1-tablet@2x-D_ZsoXuu.png 2x"
+            alt="meal"
+            width="292"
+            height="292"
+            loading="lazy"
+          />
+            <img
+              class="hero-img"
+              src="/Food-Sta/assets/foto-1-tablet-GOXmJID8.png"
+              alt="meal"
+              width="292"
+              height="292"
+              loading="lazy"
+            />
+          </picture>
+                </li>
+                <li class="hero-img-item swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="/Food-Sta/assets/foto-2-desktop-D8rDwP4L.png 1x, /Food-Sta/assets/foto-2-desktop@2x-CqHf6ahB.png 2x"
+                      alt="meal"
+                      width="528"
+                      height="528"
+                      loading="lazy"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="/Food-Sta/assets/foto-2-tablet-eTjRJr_w.png 1x, /Food-Sta/assets/foto-2-tablet@2x-4fdBvkSR.png 2x"
+                      alt="meal"
+                      width="292"
+                      height="292"
+                      loading="lazy"
+                    />
+                      <img
+                        class="hero-img"
+                        src="/Food-Sta/assets/foto-2-tablet-eTjRJr_w.png"
+                        alt="meal"
+                        width="292"
+                        height="292"
+                        loading="lazy"
+                      />
+                    </picture>
+                </li>
+                <li class="hero-img-item swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="/Food-Sta/assets/foto-3-desktop-DYzVwNo9.png 1x, /Food-Sta/assets/foto-3-desktop@2x-HgtcfU1W.png 2x"
+                      alt="meal"
+                      width="528"
+                      height="528"
+                      loading="lazy"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="/Food-Sta/assets/foto-3-tablet-rHtaZDKu.png 1x, /Food-Sta/assets/foto-3-tablet@2x-DGOOW87T.png 2x"
+                      alt="meal"
+                      width="292"
+                      height="292"
+                      loading="lazy"
+                    />
+                      <img
+                        class="hero-img"
+                        src="/Food-Sta/assets/foto-3-tablet-rHtaZDKu.png"
+                        alt="meal"
+                        width="292"
+                        height="292"
+                        loading="lazy"
+                      />
+                    </picture>
+                </li>
+              </ul>
+        
+        <!-- If we need navigation buttons -->
+       <div class="swiper-nav">
+        <button type="button" class="swiper-btn-prev swiper-btn">
+          <svg class="swiper-icon" width="12" height="22">
+            <use href="/Food-Sta/assets/icons-Do1mIRoG.svg#arrow"></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-btn-next swiper-btn">
+          <svg class="swiper-icon" width="12" height="22">
+            <use href="/Food-Sta/assets/icons-Do1mIRoG.svg#arrow"></use>
+          </svg>
+        </button>
+       </div>
+            
+          </div>
       </div>
-      <img
-        class="hero-img"
-        src="/Food-Sta/assets/salat-desktop-BoTh9s2X.png"
-        alt="salat"
-        width="528"
-        height="528"
-        loading="lazy"
-      />
-    </div>
-  </section>
+  </div>
+</section>
 
       <section id="offerings" class="offerings">
   <div class="container offerings-container">
@@ -168,7 +269,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
         <li class="offerings-item">
           <div class="offerings-item-icon">
             <svg class="offerings-icon">
-              <use href="/Food-Sta/assets/icons-CtlMJJk1.svg#rocket"></use>
+              <use href="/Food-Sta/assets/icons-Do1mIRoG.svg#rocket"></use>
             </svg>
           </div>
           <h3 class="offerings-subtitle">Fasest Delivery</h3>
@@ -180,7 +281,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
         <li class="offerings-item">
           <div class="offerings-item-icon">
             <svg class="offerings-icon">
-              <use href="/Food-Sta/assets/icons-CtlMJJk1.svg#touch"></use>
+              <use href="/Food-Sta/assets/icons-Do1mIRoG.svg#touch"></use>
             </svg>
           </div>
           <h3 class="offerings-subtitle">Easy To Order</h3>
