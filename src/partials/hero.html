@@ -1,6 +1,6 @@
 <section class="hero">
     <div class="container hero-container">
-      <div class="hero-container-wrap">
+      <!-- <div class="hero-container-wrap"> -->
         <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
         <p class="hero-text">
           With just a few clicks, you can have your favorite meals delivered
@@ -9,14 +9,125 @@
           own home.
         </p>
         <button class="hero-btn" type="button" aria-label="order now">Order Now</button>
+      <!-- </div> -->
+
+<!-- SWIPER -->
+      <div class="hero-swiper">
+        <div class="swiper sw">
+          <ul class="hero-img-list swiper-wrapper">
+                <li class="hero-img-item swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+            /img/hero/foto-1-desktop.png 1x,
+            /img/hero/foto-1-desktop@2x.png 2x"
+            alt="meal"
+            width="528"
+            height="528"
+            loading="lazy"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+            /img/hero/foto-1-tablet.png 1x,
+            /img/hero/foto-1-tablet@2x.png 2x"
+            alt="meal"
+            width="292"
+            height="292"
+            loading="lazy"
+          />
+            <img
+              class="hero-img"
+              src="/img/hero/foto-1-tablet.png"
+              alt="meal"
+              width="292"
+              height="292"
+              loading="lazy"
+            />
+          </picture>
+                </li>
+                <li class="hero-img-item swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                      /img/hero/foto-2-desktop.png 1x,
+                      /img/hero/foto-2-desktop@2x.png 2x"
+                      alt="meal"
+                      width="528"
+                      height="528"
+                      loading="lazy"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                      /img/hero/foto-2-tablet.png 1x,
+                      /img/hero/foto-2-tablet@2x.png 2x"
+                      alt="meal"
+                      width="292"
+                      height="292"
+                      loading="lazy"
+                    />
+                      <img
+                        class="hero-img"
+                        src="/img/hero/foto-2-tablet.png"
+                        alt="meal"
+                        width="292"
+                        height="292"
+                        loading="lazy"
+                      />
+                    </picture>
+                </li>
+                <li class="hero-img-item swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                      /img/hero/foto-3-desktop.png 1x,
+                      /img/hero/foto-3-desktop@2x.png 2x"
+                      alt="meal"
+                      width="528"
+                      height="528"
+                      loading="lazy"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                      /img/hero/foto-3-tablet.png 1x,
+                      /img/hero/foto-3-tablet@2x.png 2x"
+                      alt="meal"
+                      width="292"
+                      height="292"
+                      loading="lazy"
+                    />
+                      <img
+                        class="hero-img"
+                        src="/img/hero/foto-3-tablet.png"
+                        alt="meal"
+                        width="292"
+                        height="292"
+                        loading="lazy"
+                      />
+                    </picture>
+                </li>
+              </ul>
+        
+        <!-- If we need navigation buttons -->
+       <div class="swiper-nav">
+        <button type="button" class="swiper-btn-prev swiper-btn">
+          <svg class="swiper-icon" width="12" height="22">
+            <use href="./img/icons.svg#arrow"></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-btn-next swiper-btn">
+          <svg class="swiper-icon" width="12" height="22">
+            <use href="/img/icons.svg#arrow"></use>
+          </svg>
+        </button>
+       </div>
+            
+          </div>
       </div>
-      <img
-        class="hero-img"
-        src="./img/hero/salat-desktop.png"
-        alt="salat"
-        width="528"
-        height="528"
-        loading="lazy"
-      />
-    </div>
-  </section>
+  </div>
+</section>

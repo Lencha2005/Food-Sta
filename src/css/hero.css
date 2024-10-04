@@ -1,6 +1,7 @@
 .hero {
     padding-top: 60px;
     padding-bottom: 50px;
+    /* position: relative; */
 }
 
 .hero-title {
@@ -12,13 +13,10 @@
 .hero-text {
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 40px;
-    line-height: 1.43;
     margin-bottom: 32px;
 }
 .hero-img {
     display: none;
-        
 }
 
 .hero-btn {
@@ -56,29 +54,114 @@
 .hero {
     padding-bottom: 0;
 }
-  }
+
+.hero-container {
+    position: relative;
+}
+
+.hero-title {
+    width: 537px;
+    margin-bottom: 44px;
+}
+
+.hero-text {
+    width: 336px;
+    margin-bottom: 40px;
+}
+
+.hero-swiper {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 89px;
+    right: 40px;
+}
+.hero-img-list{
+    display: flex;
+}
+
+.swiper.sw {
+padding-left: 10px;
+padding-right: 10px;
+}
+.hero-img {
+    display: block;
+    border-radius: 100%;
+    border: 14px solid #ffe550;
+    transition: border-color var(--timing-function);
+}
+
+.hero-img:hover,
+.hero-img:focus {
+    border-color: var(--green);
+}
+
+.swiper-nav {
+    display: flex;
+    gap: 246px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+.swiper-btn {
+    width: 34px;
+    height: 28px;
+    /* background-color: #fefefe; */
+    border: 1px solid #fefefe;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    padding: 0;
+    fill: red;
+    stroke: red;
+    }
+
+.swiper-btn-prev.swiper-btn {
+    width: 34px;
+    height: 28px;
+    stroke: green;
+}
+.swiper-icon {
+    fill: transparent;
+    stroke: currentColor;
+    width: 22px;
+    height: 12px;
+}
+}
     
   /* DESKTOP */
-  @media screen and (min-width: 1280px) {
-    .hero {
-        padding-top: 14px;
-        padding-bottom: 69px;
-    }
-    .hero-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .hero-container-wrap {
+@media screen and (min-width: 1280px) {
+.hero {
+    padding-top: 159px;
+}
+
+/* .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+    /* .hero-container-wrap {
         width: 511px;
-    }
-    .hero-title {
-            font-size: 48px;
-            line-height: 1.2;
-            margin-bottom: 28px;
-    }
-    .hero-img {
-        border-radius: 100%;
-        border: 26px solid #ffe550;   
-    }
-  }
+    } */
+.hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    width: 502px;
+}
+
+.hero-swiper {
+    width: 580px;
+    height: 580px;
+    top: -100px;
+    right: 36px;
+}
+
+.hero-img {
+    /* top: -100px;
+    right: 56px; */
+    border: 24px solid #ffe550;
+}
+}

@@ -10,6 +10,7 @@
     padding-top: 90px;
     padding-bottom: 72px;
     width: 100%;
+    z-index: 9;
 }
 
 .apple-img {
@@ -148,7 +149,7 @@
     padding-top: 202px;
     padding-bottom: 89px;
     position: absolute;
-    top: 358px;
+    top: 434px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -234,7 +235,7 @@
     padding-top: 230px;
     padding-bottom: 43px;
     position: absolute;
-    top: 358px;
+    top: 565px;
 }
 
 .apple-img {
