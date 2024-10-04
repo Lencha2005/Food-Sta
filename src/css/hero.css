@@ -109,25 +109,24 @@ padding-right: 10px;
 .swiper-btn {
     width: 34px;
     height: 28px;
-    /* background-color: #fefefe; */
+    background-color: #fefefe;
     border: 1px solid #fefefe;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
-    padding: 0;
-    fill: red;
-    stroke: red;
-    }
+    padding: 2px;
+    transition: fill var(--timing-function);
+}
 
-.swiper-btn-prev.swiper-btn {
-    width: 34px;
-    height: 28px;
-    stroke: green;
+.swiper-btn-prev {
+    transform: rotate(180deg);
 }
 .swiper-icon {
-    fill: transparent;
-    stroke: currentColor;
-    width: 22px;
-    height: 12px;
+    width: 12px;
+    height: 22px;
+}
+
+.swiper-btn:hover {
+    fill: var(--dark-green);
 }
 }
     
@@ -163,5 +162,32 @@ padding-right: 10px;
     /* top: -100px;
     right: 56px; */
     border: 24px solid #ffe550;
+}
+
+.swiper-nav {
+    gap: 456px;
+}
+
+.swiper-btn {
+    width: 48px;
+    height: 40px;
+    background-color: #fefefe;
+    border: 1px solid #fefefe;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    padding: 4px;
+    transition: stroke var(--timing-function);
+}
+
+.swiper-btn-prev {
+    transform: rotate(180deg);
+}
+.swiper-icon {
+    width: 17px;
+    height: 30px;
+}
+
+.swiper-btn:hover {
+    fill: var(--dark-green);
 }
 }
