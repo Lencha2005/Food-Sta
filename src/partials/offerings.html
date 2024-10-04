@@ -1,14 +1,16 @@
 <section id="offerings" class="offerings">
   <div class="container offerings-container">
+    <div class="offerings-wrapper-image">
     <div class="offerings-img-wrap">
       <picture>
         <source
     media="(min-width: 1280px)"
     srcset="
-    ./images/gallery/img-1_lg.jpg 1x,
-    ./images/gallery/img-1_lg@2x.jpg 2x"
+    ./img/offerings/apple-desktop.png 1x, 
+    ./img/offerings/apple-desktop@2x.png 2x"
     width="396"
     height="502"
+    loading="lazy"
   />
   <source
   media="(min-width: 768px)"
@@ -17,6 +19,7 @@
   ./img/offerings/apple-tablet@2x.png 2x"
   widht="257"
   height="325"
+  loading="lazy"
 />
 <source
     media="(max-width: 767px)"
@@ -25,29 +28,40 @@
     ./img/offerings/apple-mobile@2x.png 2x"
     widht="202"
     height="256"
+    loading="lazy"
   />
-  <!-- <source
-    media="(max-width: 479px)"
-    srcset="
-    ./img/offerings/apple-desktop.png 1x, 
-    ./images/gallery/img-1_sm@2x.jpg 2x"
-    type="image/jpg"
-  /> -->
       <img
         class="offerings-img"
         src="./img/offerings/apple-mobile.png"
         alt="appple"
         widht="202"
         height="256"
+        loading="lazy"
       />
     </picture>
       <img
         src="./img/offerings/ellipse-shadow-bakdrop.png"
         alt="shadow"
         class="offerings-img-shadow"
-        width="252"
-        height="87"
+        loading="lazy"
       />
+    </div>
+      <img 
+      class="apple-img"
+      src="/img/offerings/ap-2-tablet.png"
+      srcset="/img/offerings/ap-2-tablet@2x.png 2x"
+      alt="apple"
+      width="166"
+      height="210"
+      loading="lazy" >
+      <img 
+      class="apple-small-img"
+      src="/img/offerings/ap-3-tablet.png"
+      srcset="/img/offerings/ap-3-tablet@2x.png 2x"
+      alt="apple"
+      width="108"
+      height="136"
+      loading="lazy" >
     </div>
     <div class="offerings-container-wrap">
       <h2 class="offerings-title">What’s Special About Our Offerings</h2>
