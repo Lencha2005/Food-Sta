@@ -1,42 +1,111 @@
 .favorite {
-    padding-top: 120px;
-    padding-bottom: 101px;
+    /* font-size: 700; */
+    padding-top: 28px;
+    /* text-align: center; */
+    padding-bottom: 60px;
 }
 
-.favorite-container {}
 
 .favorite-titel {
-        font-size: 42px;
-        text-align: center;
-        margin-bottom: 20px;
+    width: 280px;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto 20px auto;
 }
 
 .favorite-text {
-        text-align: center;
-        margin-bottom: 40px;
+    display: none;
+}
+
+.fovotite-text-mobile {
+    width: 280px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto 60px auto;
+    
 }
 
 .favorite-list {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+ 
+}
+
+.favorite-item:not(:nth-child(-n+3)) {
+    display: none;
+}
+.favorite-item {
+    width: 280px;
+    height: 282px;
+    border: 11px solid #ffe550;
+    border-radius: 140px;
+    padding: 18px 17px;
+    transition: border-color var(--timing-function);
+}
+
+.favorite-item:hover {
+    border-color: var(--green);
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+.favorite {
+    position: relative;
+    top: 1205px;
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+    
+.favorite-titel {
+    font-size: 42px;
+    width: 100%;
+}
+    
+.favorite-text {
+    margin-bottom: 60px;
+}
+    
+.fovotite-text-mobile {
+    display: none;
+}
+    
+.favorite-list {
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
- 
+    justify-content: center;
+}
+    
+.favorite-item:not(:nth-child(-n+3)) {
+        display: block;
+}
+
+.favorite-item {
+    width: 336px;
+    height: 338px;
+    border: 14px solid #ffe550;
+    border-radius: 168px;
+    padding: 20px;
+}
+}
+  
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+.favorite {
+    top: 927px;
+}
+    
+.favorite-text {
+    margin-bottom: 40px;
 }
 
 .favorite-item {
     width: calc((100% - 64px) / 3);
     border: 16px solid #ffe550;
-        border-radius: 197px;
-        height: 397px;
-        padding: 25px 24px;
+    border-radius: 197px;
+    height: 397px;
+    padding: 25px 24px;
 }
-
-/* TABLET */
-@media screen and (min-width: 768px) {
-    
-}
-  
-/* DESKTOP */
-@media screen and (min-width: 1280px) {
-    
 }

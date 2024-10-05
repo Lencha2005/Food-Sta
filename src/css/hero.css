@@ -19,6 +19,10 @@
     display: none;
 }
 
+.swiper-btn {
+    display: none;
+}
+
 .hero-btn {
     border-radius: 30px;
     border: none;
@@ -107,6 +111,7 @@ padding-right: 10px;
 }
 
 .swiper-btn {
+    display: block;
     width: 34px;
     height: 28px;
     background-color: #fefefe;
