@@ -253,6 +253,7 @@ color: var(--yellow);
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
     width: 100%;
     height: 100%;
     background-color:rgba(94, 99, 99, 0.7);
@@ -273,7 +274,7 @@ color: var(--yellow);
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
-    width: 458px;
+    width: 320px;
     min-height: 449px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
     background-color: #ffe550;
@@ -294,7 +295,7 @@ color: var(--yellow);
     width: 32px;
      height: 32px;
      fill: #2c2c2c;
-     transition: background-color 250ms ease-in-out, fill 250ms ease-in-out;
+     transition: background-color var(--timing-function), fill var(--timing-function);
 }
 
 .modal-close-btn:hover,
@@ -307,7 +308,6 @@ color: var(--yellow);
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
-    color: #2c2c2c;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -321,7 +321,6 @@ color: var(--yellow);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.4;
-    color: #2c2c2c;
     margin-bottom: 2px;
     margin-left: 12px;
 }
@@ -334,10 +333,11 @@ color: var(--yellow);
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     outline: transparent;
-    padding-left: 43px;
-    transition: border-color 250ms ease-in-out;
+    padding: 14px 12px 14px 36px;
+    transition: border-color var(--timing-function);
 }
 
+.modal-input:hover
 .modal-input:focus {
     border-color: #7eb101;
 }
@@ -355,14 +355,15 @@ color: var(--yellow);
 .modal-icon {
     position: absolute;
     top: 50%;
-    left: 18px;
+    left: 14px;
     transform: translateY(-50%);
-    stroke: #404040;
-    fill: none;
+    fill: #827e7e;
+    transition: fill var(--timing-function);
 }
 
+.modal-input:hover + .modal-icon, 
 .modal-input:focus + .modal-icon {
-    stroke: #7eb101;
+    fill: #7eb101;
 }
 
 .modal-checkbox {
@@ -425,6 +426,7 @@ color: var(--yellow);
     line-height: 1.5;
     color: #2c2c2c;
     margin: 0 auto;
+    transition: background-color var(--timing-function);
 }
 
 .modal-send-btn:hover,
@@ -434,10 +436,17 @@ color: var(--yellow);
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    
+    .modal {
+        width: 458px;
+        padding: 32px;
+    }    
+       
 }
   
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
-    
+    .modal-close-btn {
+        top: 12px;
+        right: 12px;
+    }     
 }
