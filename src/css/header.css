@@ -17,7 +17,13 @@
     outline: transparent;
     padding: 0;
     line-height: 0;
-    
+    fill: var(--dark-green);
+    transition: fiil var(--timing-function);
+}
+
+.btn-open-mobile:hover,
+.btn-open-mobile:focus {
+    fill: var(--yellow)
 }
 
 .header-container {

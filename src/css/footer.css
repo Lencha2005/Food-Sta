@@ -1,33 +1,50 @@
 .page-footer {
-    background-image: url(../img/footer/bg-footer-desktop.jpg);
-    background-position: center bottom;
+    background-image:
+    image-set(
+        url(/img/footer/footer-mobile.jpg) 1x,
+        url(/img/footer/footer-mobile@2x.jpg) 2x
+    );
     background-repeat: no-repeat;
-    background-size: 1211px 266px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-size: 100% 100%;
+    background-position: 50% 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    z-index: 9;
+    box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
 }
 
 .footer-wrap {
+    width: 440px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: start;
+    row-gap: 50px;
+    column-gap: 46px;
     margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-nav {
+    width: 50px;
 }
 
 .footer-nav-list {
     display: flex;
-    gap: 28px;
-    margin-right: 320px;
+    flex-direction: column;
+    gap: 20px;
     font-size: 14px;
 }
 
-.logo-footer {
-    margin-right: auto;
+.footer-nav-item {
+    transition: color var(--timing-function);
 }
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+    color: var(--yellow);
+}
+
 
 .wrap-title {
     font-weight: 500;
@@ -36,15 +53,23 @@
     margin-bottom: 12px;
 }
 
+.form-footer {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 24px;
+}
+
 .form-input {
     border: 0.85px solid #ffe550;
     border-radius: 30px;
     padding: 10px;
-    width: 279px;
+    width: 100%;
     height: 42px;
     outline: transparent;
-    margin-right: 13px;
-    transition: border-color 250ms ease-in-out;
+    transition: border-color var(--timing-function);
 }
 
 .form-input::placeholder {
@@ -53,61 +78,249 @@
     color: #505050;
 }
 
+.form-input:hover,
 .form-input:focus {
     border-color: #7eb101;
 }
 
 .footer-btn {
-    border: 2px solid #7eb101;
+    border: 0.85px solid #7eb101;
     border-radius: 30px;
     padding: 10px 20px;
-    min-width: 103px;
+    width: 103px;
     background-color: #ffffff;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
-    margin-bottom: 12px;
-    transition: border-color 250ms ease-in-out;
+    transition: border-color var(--timing-function);
 }
 
 .footer-btn:hover,
 .footer-btn:focus {
-    border: 2px solid #ffe450;
+    border: 0.85px solid #ffe450;
+}
+
+.wrap-text {
+    font-size: 10px;
+}
+
+.wrap-link {
+    color: var(--dark-green);
+    text-decoration: underline;
+    transition: color var(--timing-function);
+}
+
+.wrap-link:hover,
+.wrap-link:focus {
+color: var(--yellow);
+}
+
+.footer-privacy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+.privacy-list {
+    display: flex;
+    gap: 32px;
+}
+
+.privacy-item {
+    font-size: 10px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #7eb101;
+    transition: color var(--timing-function);
+}
+
+.privacy-item:hover,
+.privacy-item:focus {
+color: var(--yellow);
+}
+
+.privacy-text {
+    font-size: 10px;
+}
+
+/* MAX-WIDTH 479px */
+@media screen and (max-width: 479px) {
+.footer-wrap {
+        width: 280px;
+        row-gap: 40px;
+}
+
+.form-footer {
+    width: 280px;
+}
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+.page-footer {
+        background-image:
+        image-set(
+            url(/img/footer/footer-tablet.jpg) 1x,
+            url(/img/footer/footer-tablet@2x.jpg) 2x
+        );
+        background-size: 100% 506px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+    top: 1650px;
+}
+
+.footer-wrap {
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 114px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.footer-nav {
+    width: 319px;
+}
+
+.footer-nav-list {
+    flex-direction: row;
+    gap: 28px;
+}
+
+.form-footer {
+    width: 100%;
+    flex-direction: row;
+    gap: 13px;
+    margin-bottom: 12px;
+}
+
+.form-input {
+    width: 279px;
 }
 
 .wrap-text {
     font-size: 12px;
 }
 
+
 .footer-privacy {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 46px;
 }
 
 .privacy-list {
-    display: flex;
     gap: 20px;
 }
 
 .privacy-item {
     font-size: 12px;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #7eb101;
 }
 
 .privacy-text {
     font-size: 12px;
 }
-
-/* TABLET */
-@media screen and (min-width: 768px) {
-    
 }
   
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
+.page-footer {
+        background-image:
+        image-set(
+            url(/img/footer/footer-desktop.jpg) 1x,
+            url(/img/footer/footer-desktop@2x.jpg) 2x
+        );
+        /* background-size: 100% 266px; */
+        background-size: cover;
+        /* background-position: bottom; */
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+    top: 1443px;
+}
     
+    .footer-wrap {
+        gap: 0;
+        align-items: center;
+        margin-bottom: 80px;
+        justify-content: space-between;
+    }
+    
+    .footer-nav-list {
+        display: flex;
+        gap: 28px;
+        margin-right: 320px;
+        font-size: 16px;
+    }
+    
+    /* .logo-footer {
+        margin-right: auto;
+    } */
+.form-footer {
+    margin-bottom: 12px;
+}
+
+.form-input {
+        width: 279px;
+        height: 42px;
+        outline: transparent;
+        margin-right: 13px;
+        transition: border-color 250ms ease-in-out;
+}
+    
+    .form-input::placeholder {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #505050;
+    }
+    
+    .form-input:focus {
+        border-color: #7eb101;
+    }
+    
+    .footer-btn {
+        border: 2px solid #7eb101;
+        border-radius: 30px;
+        padding: 10px 20px;
+        min-width: 103px;
+        background-color: #ffffff;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+
+        transition: border-color 250ms ease-in-out;
+    }
+    
+    .footer-btn:hover,
+    .footer-btn:focus {
+        border: 2px solid #ffe450;
+    }
+    
+    .wrap-text {
+        font-size: 12px;
+    }
+    
+    .footer-privacy {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .privacy-list {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .privacy-item {
+        font-size: 12px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #7eb101;
+    }
+    
+    .privacy-text {
+        font-size: 12px;
+    }   
 }
 
 
