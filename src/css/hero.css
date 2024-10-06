@@ -51,8 +51,7 @@
 .hero-text {
     font-weight: 400;
     line-height: 1.43;
-}
-    
+} 
 }
   /* TABLET */
   @media screen and (min-width: 768px) {
@@ -167,23 +166,11 @@ padding-right: 10px;
 .swiper-btn {
     width: 48px;
     height: 40px;
-    background-color: #fefefe;
-    border: 1px solid #fefefe;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
     padding: 4px;
-    transition: stroke var(--timing-function);
 }
 
-.swiper-btn-prev {
-    transform: rotate(180deg);
-}
 .swiper-icon {
     width: 17px;
     height: 30px;
-}
-
-.swiper-btn:hover {
-    fill: var(--dark-green);
 }
 }

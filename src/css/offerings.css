@@ -110,13 +110,12 @@
     line-height: 1.5;
     border: 2px solid var(--dark-green);
     background: #ffffff;
-    transition: background-color var(--timing-function), border var(--timing-function);
+    transition: border-color var(--timing-function);
 }
 
 .offerings-btn:focus,
 .offerings-btn:hover {
-    background-color: var(--green);
-    border: transparent;
+    border-color: var(--yellow);
 }
 
    /* MAX-WIDTH 479px */

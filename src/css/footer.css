@@ -226,101 +226,25 @@ color: var(--yellow);
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
 .page-footer {
-        background-image:
+    background-image:
         image-set(
             url(/img/footer/footer-desktop.jpg) 1x,
             url(/img/footer/footer-desktop@2x.jpg) 2x
         );
-        /* background-size: 100% 266px; */
-        background-size: cover;
-        /* background-position: bottom; */
-        padding-top: 100px;
-        padding-bottom: 100px;
-        position: relative;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
     top: 1443px;
 }
     
-    .footer-wrap {
-        gap: 0;
-        align-items: center;
-        margin-bottom: 80px;
-        justify-content: space-between;
-    }
-    
-    .footer-nav-list {
-        display: flex;
-        gap: 28px;
-        margin-right: 320px;
-        font-size: 16px;
-    }
-    
-    /* .logo-footer {
-        margin-right: auto;
-    } */
-.form-footer {
-    margin-bottom: 12px;
+.footer-wrap {
+    gap: 0;
+    align-items: center;
+    margin-bottom: 80px;
+    justify-content: space-between;
 }
-
-.form-input {
-        width: 279px;
-        height: 42px;
-        outline: transparent;
-        margin-right: 13px;
-        transition: border-color 250ms ease-in-out;
-}
-    
-    .form-input::placeholder {
-        font-size: 12px;
-        line-height: 1.5;
-        color: #505050;
-    }
-    
-    .form-input:focus {
-        border-color: #7eb101;
-    }
-    
-    .footer-btn {
-        border: 2px solid #7eb101;
-        border-radius: 30px;
-        padding: 10px 20px;
-        min-width: 103px;
-        background-color: #ffffff;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 1.5;
-
-        transition: border-color 250ms ease-in-out;
-    }
-    
-    .footer-btn:hover,
-    .footer-btn:focus {
-        border: 2px solid #ffe450;
-    }
-    
-    .wrap-text {
-        font-size: 12px;
-    }
-    
-    .footer-privacy {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .privacy-list {
-        display: flex;
-        gap: 20px;
-    }
-    
-    .privacy-item {
-        font-size: 12px;
-        text-decoration: underline;
-        text-decoration-skip-ink: none;
-        color: #7eb101;
-    }
-    
-    .privacy-text {
-        font-size: 12px;
-    }   
+     
 }
 
 
