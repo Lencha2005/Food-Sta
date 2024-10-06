@@ -9,7 +9,7 @@
     background-position: 50% 0;
     padding-top: 90px;
     padding-bottom: 72px;
-    width: 100%;
+    /* width: 100%; */
     z-index: 9;
 }
 
@@ -60,7 +60,7 @@
 }
   
 .offerings-text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.43;
     margin-bottom: 28px;
 }
@@ -133,9 +133,6 @@
     font-size: 28px;
 }
   
-.offerings-text {
-    font-size: 14px;
-}
 }
 
   /* TABLET */
@@ -199,6 +196,7 @@
 }
 
 .offerings-text {
+    font-size: 16px;
     line-height: 1.5;
     width: 500px;
     margin-bottom: 25px;

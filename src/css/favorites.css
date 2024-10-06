@@ -1,28 +1,20 @@
 .favorite {
-    /* font-size: 700; */
-    padding-top: 28px;
-    /* text-align: center; */
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
-
 .favorite-titel {
     width: 280px;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     margin: 0 auto 20px auto;
 }
 
 .favorite-text {
-    display: none;
-}
-
-.fovotite-text-mobile {
     width: 280px;
     text-align: center;
     font-size: 14px;
     margin: 0 auto 60px auto;
-    
 }
 
 .favorite-list {
@@ -53,8 +45,8 @@
 @media screen and (min-width: 768px) {
 .favorite {
     position: relative;
-    top: 1205px;
-    padding-top: 0;
+    top: 1110px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
     
@@ -64,6 +56,7 @@
 }
     
 .favorite-text {
+    font-size: 16px;
     margin-bottom: 60px;
 }
     
@@ -94,9 +87,9 @@
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
 .favorite {
-    top: 927px;
+    top: 820px;
 }
-    
+
 .favorite-text {
     margin-bottom: 40px;
 }
